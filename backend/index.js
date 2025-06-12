@@ -20,7 +20,7 @@ app.use(express.json());
 // Create the Socket.IO server
 const io = new Server(server, {
     cors: {
-        origin: "*", // You can restrict this to your frontend domain in production
+        origin: "https://polls-inky.vercel.app", // You can restrict this to your frontend domain in production
         methods: ["GET", "POST"]
     }
 });
